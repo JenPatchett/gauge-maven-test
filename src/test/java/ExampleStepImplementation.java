@@ -6,13 +6,13 @@ import java.util.HashSet;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class StepImplementation {
+public class ExampleStepImplementation {
 
     private HashSet<Character> vowels;
 
     @Step("Vowels in English language are <vowelString>.")
     public void setLanguageVowels(String vowelString) {
-        vowels = new HashSet<>();
+        vowels = new HashSet<Character>();
         for (char ch : vowelString.toCharArray()) {
             vowels.add(ch);
         }

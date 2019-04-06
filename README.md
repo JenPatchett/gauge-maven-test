@@ -1,7 +1,7 @@
 # gauge-maven-test
 A gauge, maven, java test framework using [scala-webapp](https://github.com/rayhaanbhikha/scala-webapp) by Rayhaan Bhikha. 
 
-To run this project, first clone it to your computer, then skip to **Clone Scala-webapp** section to continue setup. Or read on to set up your own test framework from scratch.
+To run this project, first clone it to your computer, then skip to **Clone Scala-webapp** section to continue setup. Or read on to set up your own test framework from scratch. You will need to [install Docker](https://www.docker.com/products/docker-desktop) to create and run this project.
 
 
 ## To Create Your Own Maven Project (IntelliJ)
@@ -49,7 +49,7 @@ To view test results open html report located in: /reports/html-report/index.htm
 ## Clone Scala-webapp
 Clone [scala-webapp](https://github.com/rayhaanbhikha/scala-webapp) from Rayhaan Bhikha
 
-Once cloned, run Docker, cd into scala-webapp in Terminal, then follow instructions in the [README.md](https://github.com/rayhaanbhikha/scala-webapp)
+Once cloned, start Docker, cd into scala-webapp in Terminal, then follow instructions in the [README.md](https://github.com/rayhaanbhikha/scala-webapp) to run the Docker containers.
 
 
 ## Docker

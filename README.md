@@ -1,8 +1,9 @@
 # gauge-maven-test
-A gauge, maven, java test framework
+A gauge, maven, java test framework using [scala-webapp](https://github.com/rayhaanbhikha/scala-webapp) by Rayhaan Bhikha
+
 
 ## Create Maven Project (IntelliJ)
-5 min video tutorial here: https://www.youtube.com/watch?v=fi7ZbL23I2E 
+Follow this 5 min [YouTube tutorial](https://www.youtube.com/watch?v=fi7ZbL23I2E) or read on for instructions.
 
 
 File > New > Project
@@ -34,11 +35,33 @@ Click View *(from top menu)* > Tool Windows > Maven
 
 Initialise as Gauge Java project: `gauge init java`
 
+*Before continuing, resolve any dependencies in /src/test/java/StepImplementation.java*
+
 Clean and compile the project: `mvn clean compile`
 
 Run the example specs (tests) file: `gauge run specs`
 
 To view test results open html report located in: /reports/html-report/index.html
 
+
+
+## Clone Scala Web App
+Clone [scala-webapp](https://github.com/rayhaanbhikha/scala-webapp) from Rayhaan Bhikha
+
+Once cloned, run Docker, cd into scala-webapp in Terminal, then follow instructions in the [README.md](https://github.com/rayhaanbhikha/scala-webapp)
+
+
+## Docker
+After following all instructions in the [README.md](https://github.com/rayhaanbhikha/scala-webapp) for scala-webapp, verify both Docker containers are now running: 
+
+`docker ps` - should see *userdatastore* and *usergateway*
+
+To stop all currently running containters: `docker stop $(docker ps -q)`
+
+To restart the containers: `docker start userdatastore usergateway`
+
+To stop these containers: `docker stop userdatastore usergateway`
+
+To verify these containers are no longer running: `docker ps`
 
 
